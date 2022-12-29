@@ -1,0 +1,24 @@
+:root {
+  font-size: 18px;
+  font-family: 'BN6FontBold', sans-serif;
+  --primary: #213870;
+  --secondary: #e9dfcb;
+}
+
+body {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url(./images/background_pattern.svg) no-repeat;
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+  height: 100vh;
+}
+
+main {
+  margin-left: 5rem;
+}
+
+.navbar {
+  position: fixed;
+  background: url(./images/navbar_pattern.svg);
+  image-rendering: pixelated;
+}
