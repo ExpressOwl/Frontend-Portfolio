@@ -39,7 +39,97 @@
     <!-- header/navbar -->
 
     <!-- Projects -->
-    <main></main>
+    <main class="article_container">
+      <h1>Projects</h1>
+      <article class="wrapper">
+        <h2>Online Menu for Local Business</h2>
+        <!-- Tab Container -->
+        <div class="tabs_wrapper" data-direction="vertical" id="list">
+          <div role="tablist" aria-label="Projects">
+            <button
+              role="tab"
+              aria-controls="project_1"
+              id="takeaway_menu"
+              aria-label="1.1"
+              aria-selected="true"
+            >
+              Project 1
+            </button>
+
+            <button
+              role="tab"
+              aria-controls="project_2"
+              id="friend_car_showcase"
+              aria-label="1.2"
+              aria-selected="false"
+            >
+              Project 2
+            </button>
+
+            <button
+              role="tab"
+              aria-controls="project_3"
+              id="gaming_newsite"
+              aria-label="1.3"
+              aria-selected="false"
+            >
+              Project 3
+            </button>
+          </div>
+
+          <!-- Text within the tab clicked -->
+          <div
+            role="tab_panel"
+            aria-labelledby="takeaway_menu"
+            id="project_1"
+            tabindex="0"
+          >
+            <h3>1.1 Online Menu for Local Business</h3>
+            <p>
+              Made and deployed a website for a local Chinese Takeaway which
+              holds their Online Menu alongside their contact information and
+              location using Google Map API
+            </p>
+            <a href="#" class="btn">Visit Live Site</a>
+          </div>
+
+          <div
+            role="tab_panel"
+            aria-labelledby="friend_car_showcase"
+            id="project_2"
+            tabindex="0"
+            hidden="true"
+          >
+            <h3>1.1 Online Menu for Local Business</h3>
+            <p>
+              Made and deployed a website for a local Chinese Takeaway which
+              holds their Online Menu alongside their contact information and
+              location using Google Map API
+            </p>
+            <a href="#" class="btn">Visit Live Site</a>
+          </div>
+
+          <div
+            role="tab_panel"
+            aria-labelledby="gaming_newsite"
+            id="project_3"
+            tabindex="0"
+            hidden="true"
+          >
+            <h3>1.1 Online Menu for Local Business</h3>
+            <p>
+              Made and deployed a website for a local Chinese Takeaway which
+              holds their Online Menu alongside their contact information and
+              location using Google Map API
+            </p>
+            <a href="#" class="btn">Visit Live Site</a>
+          </div>
+          <!-- Text within the tab clicked -->
+          <!-- Tab Container -->
+        </div>
+      </article>
+    </main>
+
     <script src="./main.js"></script>
   </body>
 </html>

@@ -19,13 +19,13 @@ ul, li, a {
 
 body {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url(./images/background_pattern.svg) no-repeat;
-  height: 100vh;
+  min-height: 100vh;
 }
 /* General Styles */
 
 /* Header */
 .container {
-  position: fixed;
+  /* position: fixed; */
   background: url(./images/navbar_pattern.svg);
   image-rendering: pixelated;
   width: 100%;
@@ -46,8 +46,87 @@ body {
   margin: 0 5em;
 }
 
+.navbar a {
+  color: var(--primary);
+}
+
 .navbar_icon{
   width: 50px;
   height: auto;
 }
 /* Header */
+
+/* Article */
+.article_container {
+  background: url(./images/navbar_pattern.svg);
+  margin-top: 1rem;
+  display: grid;
+  place-items: center;
+  max-width: 1200px;
+}
+
+.wrapper {
+  display: grid;
+  gap: 1rem;
+  max-width: 1200px;
+}
+
+.btn:is(:active, :link, :visited) {
+  display: inline-block;
+  background-color: var(--primary);
+  color: var(--secondary);
+  margin-bottom: 1rem;
+  padding: .5rem 1rem;
+  text-decoration: none;
+  border: 9px solid transparent;
+  transition: all 250ms ease-in-out;
+}
+
+.btn:is(:hover, :focus) {
+  border: var(--secondary);
+  background-color: var(--secondary);
+  color: var(--primary);
+  outline: none;
+}
+
+.tabs_wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+[role=tablist] {
+  display: flex;
+  align-self: flex-start;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+[role=tab] {
+  background-color: var(--primary);
+  border: 0.4rem outset var(--secondary);
+  cursor: pointer;
+  font-size: 1.2rem;
+  color: var(--secondary);
+  font-family: inherit;
+  padding: 0.2rem 0.5rem;
+  line-height: 0.8;
+}
+
+[role=tab]:is(:hover, :focus) {
+  background-color: var(--secondary);
+  color: var(--primary);
+}
+
+[role=tab][aria-selected="true"]:is(:hover, :focus) {
+  background-color: var(--secondary);
+  color: var(--primary);
+  border: .4rem inset var(--secondary);
+}
+
+[role=tab_panel] {
+  background: url(./images/navbar_pattern.svg);
+  border: .4rem inset var(--secondary);
+  padding: 2rem;
+}
+/* Article */
