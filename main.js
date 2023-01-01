@@ -57,14 +57,10 @@ class Tablist {
   }
 
   activatePanel(e) {
-    if (e.target === e.currentTarget) {
-      return
-    }
-
+    if (e.target === e.currentTarget) {return}
     this.tabs.forEach((t) => {
-      e.target.id === t.tab.id ? t.showTab : t.hideTab();
+      e.target.id === t.tab.id ? t.showTab() : t.hideTab();
     });
-
     this.panels.forEach((p) => {
       e.target.getAttribute("aria-controls") === p.panel.id
         ? p.showPanel()
