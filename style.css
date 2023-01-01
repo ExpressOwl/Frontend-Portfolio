@@ -40,20 +40,30 @@ body {
   margin: auto;
 }
 
+nav {
+  width: auto;
+}
+
 .logo {
-  width: 75px;
+  width: 50px;
   height: auto;
+  margin: 0 1rem;
 }
 
 .navbar {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   text-align: center;
-  margin: 0 5em;
+  margin: auto;
+  width: auto;
 }
 
 .navbar a {
   color: var(--primary);
+}
+
+.navbar li {
+  margin: 0 1rem;
 }
 
 .navbar_icon {
@@ -83,6 +93,7 @@ body {
   justify-content: center;
   margin-bottom: 1rem;
   margin: auto;
+  width: auto;
 }
 
 .wrapper h1 {
