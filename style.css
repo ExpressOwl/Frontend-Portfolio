@@ -35,14 +35,13 @@ body {
   image-rendering: pixelated;
   width: 100%;
   padding: 0.3em;
-  border-radius: 10px;
   margin-top: 0.5em;
   margin-bottom: 1rem;
   margin: auto;
 }
 
 .logo {
-  width: 100px;
+  width: 75px;
   height: auto;
 }
 
@@ -133,6 +132,7 @@ body {
   background: url(./images/navbar_pattern.svg);
   border: 0.4rem inset var(--secondary);
   padding: 2rem;
+  margin: 1rem;
 }
 
 [role="tab_panel"] h3 {
