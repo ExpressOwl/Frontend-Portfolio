@@ -81,6 +81,14 @@ class Tablist {
 const list = new Tablist("list");
 // Tab functionality
 
-// Underline on navbar
+// Smooth scrolling
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function (e) {
+      e.preventDefault();
 
-// Underline on navbar
+      document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+      });
+  });
+});
+// Smooth scrolling

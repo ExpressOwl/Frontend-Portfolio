@@ -201,7 +201,9 @@ nav {
 .about_me {
   font-size: 1.5rem;
   line-height: 1.2em;
-  padding: 0.5em;
+  padding: 2rem;
+  margin: 1rem;
+  border: 0.4rem inset var(--secondary);
 }
 /* About me */
 

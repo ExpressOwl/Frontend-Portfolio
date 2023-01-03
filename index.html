@@ -14,21 +14,21 @@
         <ul class="navbar">
           <img src="./images/logo.svg" class="logo" alt="logo" />
           <li>
-            <a href="">
+            <a href="#projects">
               <img class="navbar_icon" src="./images/folder_closed.svg" />
               <div>Projects</div>
             </a>
           </li>
 
           <li>
-            <a href="">
+            <a href="#about_me">
               <img class="navbar_icon" src="./images/aboutme.svg" />
               <div>About me</div>
             </a>
           </li>
 
           <li>
-            <a href="">
+            <a href="#contact_me">
               <img class="navbar_icon" src="./images/contact.svg" />
               <div>Contact</div>
             </a>
@@ -41,7 +41,7 @@
     <!-- Projects -->
     <main class="article_container">
       <article class="wrapper">
-        <h1>Projects</h1>
+        <h1 id="projects">Projects</h1>
         <h2>Three livesites showcasing my HTML, CSS and Javascript skills.</h2>
         <!-- Tab Container -->
         <div class="tabs_wrapper" data-direction="vertical" id="list">
@@ -91,10 +91,9 @@
             <p>
               A local business wanted to have their menu online to help
               customers ascertain price changes and changing opening/closing
-              times. <br />
-              The site was made with HTML, CSS and a little bit of vanilla
-              Javascript. The Google Map link Embed was used as well to show
-              customers the location of the business
+              times. The site was made with HTML, CSS and a little bit of
+              vanilla Javascript. The Google Map link Embed was used as well to
+              show customers the location of the business.
             </p>
             <a href="https://pearlchina.co.uk/" target="_blank" class="btn"
               >Visit Live Site</a
@@ -108,13 +107,16 @@
             tabindex="0"
             hidden="true"
           >
-            <h3>2. Mockup One-Page Business Website</h3>
+            <h3>2. Mockup Gaming Website Article</h3>
             <p>
-              Made and deployed a website for a local Chinese Takeaway which
-              holds their Online Menu alongside their contact information and
-              location using Google Map API
+              Made a fully responsive article using a 21 grid system layout
+              alongside the clamp property. Also learnt how to use the Root css
+              property in a creative way, utilising the hue and hsl property to
+              change colours on the fly within the root.
             </p>
-            <a href="#" class="btn">Visit Live Site</a>
+            <a href="https://expressowl.github.io/Gaming-Article/" target="_blank" class="btn"
+              >Visit Live Site</a
+            >
           </div>
 
           <div
@@ -139,7 +141,7 @@
     </main>
 
     <section class="article_container">
-      <h1>About me</h1>
+      <h1 id="about_me">About me</h1>
       <h2>Hello, my name is Sean Sew.</h2>
       <p class="about_me">
         I am a Frontend Developer based in London. <br />
@@ -151,8 +153,8 @@
     </section>
 
     <section class="article_container">
-      <h1>Contact Me</h1>
-      <p class="contact_me">Contact me on GitHub and LinkedIn here!</p>
+      <h1 id="contact_me">Contact Me</h1>
+      <p class="contact_me">Contact me on GitHub and LinkedIn here! <br /></p>
       <div class="icon_container">
         <a href="https://github.com/ExpressOwl" target="_blank"
           ><img class="account_icon" src="./images/GitHub.svg" alt="GitHub"
