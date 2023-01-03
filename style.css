@@ -22,7 +22,6 @@ a {
 body {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)),
     url(./images/background_pattern.svg);
-  min-height: 100vh;
   margin: auto;
   background-attachment: fixed;
 }
@@ -82,6 +81,8 @@ nav {
   width: 90%;
   text-align: center;
   margin: auto;
+  margin-top: 1em;
+  margin-bottom: 1em;
   position: relative;
   top: 6em;
   border-radius: 2rem;
@@ -179,3 +180,62 @@ nav {
   border: 7px solid transparent;
 }
 /* Article */
+
+/* About me */
+.article_container h1 {
+  text-decoration: underline;
+  margin-top: 0.5em;
+}
+
+.article_container h2 {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+.account_icon {
+  margin-top: 0.5em;
+  height: 50px;
+  width: auto;
+}
+
+.about_me {
+  font-size: 1.5rem;
+  line-height: 1.2em;
+  padding: 0.5em;
+}
+/* About me */
+
+/* Contact me */
+.contact_me {
+  font-size: 1.5rem;
+}
+
+.icon_container {
+  margin: 0.5em;
+}
+
+.icon_container a {
+  margin: 0.5em;
+}
+/* Contact me */
+
+/* footer */
+.footer {
+  display: grid;
+  width: 90%;
+  margin: auto;
+  position: relative;
+  top: 7em;
+  border-radius: 2rem;
+}
+
+
+footer::before {
+  width: 100%;
+  height: 5px;
+  display: block;
+  content: "";
+  border-radius: 1000px;
+  background: var(--primary);
+}
+/* footer */

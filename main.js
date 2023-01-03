@@ -1,3 +1,4 @@
+// Tab functionality
 class Tab {
   constructor(tab) {
     this.tab = tab;
@@ -78,4 +79,8 @@ class Tablist {
 }
 
 const list = new Tablist("list");
-console.log(list);
+// Tab functionality
+
+// Underline on navbar
+
+// Underline on navbar
